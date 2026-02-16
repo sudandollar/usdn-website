@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+    --primary: 210 50% 25%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 170 50% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 40 30% 95%;
+    --muted-foreground: 220 10% 45%;
+    --accent: 35 50% 65%;
+    --accent-foreground: 210 50% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 170 50% 40%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Card hover effect */
+.card-hover {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Gradient backgrounds */
+.bg-gradient-hero {
+  background: linear-gradient(135deg, #FAFAFA 0%, #E8F4F8 50%, #F5F0E8 100%);
+}
+
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #1E3A5F 0%, #2A9D8F 100%);
+}
+
+.bg-gradient-cta {
+  background: linear-gradient(135deg, #2A9D8F 0%, #1E3A5F 100%);
+}
+
+/* Button hover arrow */
+.btn-arrow {
+  transition: transform 0.2s ease;
+}
+
+.group:hover .btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Custom colors */
+.bg-navy {
+  background-color: #1E3A5F;
+}
+
+.bg-navy-light {
+  background-color: #2A4A73;
+}
+
+.text-navy {
+  color: #1E3A5F;
+}
+
+.bg-teal {
+  background-color: #2A9D8F;
+}
+
+.text-teal {
+  color: #2A9D8F;
+}
+
+.bg-gold {
+  background-color: #D4A574;
+}
+
+.bg-gold-light {
+  background-color: #E0B88A;
+}
+
+.text-gold {
+  color: #D4A574;
+}
+
+.text-gold-dark {
+  color: #B88D5E;
+}
+
+.bg-cream {
+  background-color: #F5F0E8;
+}
+
+/* Gold background utility */
+.bg-gold-100 {
+  background-color: #F5E6D3;
+}
+
+.text-gold-600 {
+  color: #B88D5E;
+}

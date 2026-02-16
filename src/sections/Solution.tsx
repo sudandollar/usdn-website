@@ -61,7 +61,7 @@ export function Solution() {
           <div className="reveal flex justify-center">
             <div className="relative">
               <img
-                src="/solution-illustration.png"
+                src="/images/solution-illustration.png"
                 alt="Decentralized network illustration"
                 className="w-full max-w-lg rounded-2xl"
               />

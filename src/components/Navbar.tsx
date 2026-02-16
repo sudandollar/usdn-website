@@ -36,7 +36,7 @@ export function Navbar() {
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
             <img
-              src="/usdn_logo.png"
+              src="/images/usdn_logo.png"
               alt="USDN"
               className="h-8 w-auto transition-transform group-hover:scale-105"
             />

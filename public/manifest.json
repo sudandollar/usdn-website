@@ -1,0 +1,22 @@
+{
+  "name": "USDN Africa",
+  "short_name": "USDN",
+  "description": "Pan-African digital currency powering cross-border commerce.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0F19",
+  "theme_color": "#C4A35A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/usdn_logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/usdn_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

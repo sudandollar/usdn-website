@@ -109,7 +109,7 @@ export function Marketplace() {
           <div className="reveal flex justify-center">
             <div className="relative">
               <img
-                src="/marketplace-illustration.png"
+                src="/images/marketplace-illustration.png"
                 alt="Digital marketplace illustration"
                 className="w-full max-w-lg rounded-2xl"
               />

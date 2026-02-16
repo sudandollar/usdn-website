@@ -48,7 +48,7 @@ export function Hero() {
               Say hello to{' '}
               <span className="inline-flex items-center gap-2">
                 <img 
-                  src="/usdn-logo.png" 
+                  src="/images/usdn_logo.png" 
                   alt="USDN" 
                   className="w-12 h-12 sm:w-14 sm:h-14 inline-block"
                 />
@@ -108,7 +108,7 @@ export function Hero() {
                     {/* Header */}
                     <div className="flex items-center justify-between mb-6">
                       <div className="w-8 h-8 bg-navy/10 rounded-full flex items-center justify-center">
-                        <img src="/usdn-logo.png" alt="" className="w-5 h-5" />
+                        <img src="/images/usdn_logo.png" alt="" className="w-5 h-5" />
                       </div>
                       <div className="text-xs text-gray-400">9:41</div>
                     </div>

@@ -35,7 +35,7 @@ export function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <a href="/" className="flex items-center gap-2 mb-4">
               <img
-                src="/usdn-logo.png"
+                src="/images/usdn_logo.png"
                 alt="USDN"
                 className="h-8 w-auto"
               />

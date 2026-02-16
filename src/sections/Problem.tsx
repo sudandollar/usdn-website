@@ -69,7 +69,7 @@ export function Problem() {
           <div className="reveal order-1 lg:order-2 flex justify-center">
             <div className="relative">
               <img
-                src="/problem-illustration.png"
+                src="/images/problem-illustration.png"
                 alt="Financial barriers illustration"
                 className="w-full max-w-lg rounded-2xl"
               />

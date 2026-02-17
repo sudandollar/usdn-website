@@ -1,17 +1,24 @@
+
 {
   "build": {
     "env": {
       "NODE_VERSION": "22"
     }
   },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
-  ],
   "redirects": [
     {
-      "source": "https://usdn.network/(.*)",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "usdn.network"
+        }
+      ],
       "destination": "https://www.usdnafrica.com/$1",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }

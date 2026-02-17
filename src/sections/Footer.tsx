@@ -1,20 +1,20 @@
 import { Twitter, Github, Facebook, Instagram } from 'lucide-react';
 
 const resourceLinks = [
-  { name: 'Whitepaper', href: '#whitepaper' },
-  { name: 'Token & Sale', href: '#token' },
-  { name: 'Roadmap', href: '#roadmap' },
-  { name: 'Marketplace', href: '#marketplace' },
+  { name: 'Whitepaper', href: '/white-paper' },
+  { name: 'Token & Sale', href: '#' },
+  { name: 'Roadmap', href: '#' },
+  { name: 'Marketplace', href: '#' },
 ];
 
 const developerLinks = [
-  { name: 'Wallet', href: '#wallet' },
+  { name: 'Wallet', href: '#' },
   { name: 'Documentation', href: '#' },
   { name: 'Security', href: '#' },
 ];
 
 const companyLinks = [
-  { name: 'About', href: '#about' },
+  { name: 'About the team', href: '#' },
   { name: 'Legal', href: '#' },
   { name: 'Contact', href: '#' },
 ];
@@ -30,11 +30,11 @@ const socialLinks = [
 export function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100 py-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12">
+      <div className=" max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 mb-12 place-items-center place-content-center">
           {/* Logo & Description */}
-          <div className="sm:col-span-2 lg:col-span-1">
-            <a href="/" className="flex items-center gap-2 mb-4">
+          <div className="flex flex-col itmes-center justify-center sm:col-span-2 lg:col-span-1">
+            <a href="/" className="flex items-center justify-center md:justify-start gap-2 mb-4">
               <img
                 src="/images/usdn_logo.png"
                 alt="USDN"
@@ -42,11 +42,11 @@ export function Footer() {
               />
               <span className="text-lg font-bold text-gray-900">USDN</span>
             </a>
-            <p className="text-gray-500 text-sm leading-relaxed mb-6">
+            <p className="text-gray-500 text-sm leading-relaxed mb-6 text-center lg:text-start">
               A decentralized financial ecosystem for Sudan and emerging markets.
             </p>
             {/* Social Links */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center md:justify-start gap-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -62,9 +62,9 @@ export function Footer() {
           </div>
 
           {/* Resources */}
-          <div>
+          <div className=' flex flex-col items-center md:items-start'>
             <h3 className="font-semibold text-gray-900 mb-4 text-sm">Resources</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center md:text-start">
               {resourceLinks.map((link) => (
                 <li key={link.name}>
                   <a
@@ -79,9 +79,9 @@ export function Footer() {
           </div>
 
           {/* Developers */}
-          <div>
+          <div className=' flex flex-col items-center md:items-start'>
             <h3 className="font-semibold text-gray-900 mb-4 text-sm">Developers</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center md:text-start">
               {developerLinks.map((link) => (
                 <li key={link.name}>
                   <a
@@ -94,11 +94,9 @@ export function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Company */}
-          <div>
+          <div className=' flex flex-col items-center md:items-start'>
             <h3 className="font-semibold text-gray-900 mb-4 text-sm">Company</h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-center md:text-start">
               {companyLinks.map((link) => (
                 <li key={link.name}>
                   <a
@@ -111,6 +109,7 @@ export function Footer() {
               ))}
             </ul>
           </div>
+ 
         </div>
 
         {/* Bottom Bar */}

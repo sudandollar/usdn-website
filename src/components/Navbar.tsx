@@ -3,7 +3,7 @@ import { Menu, X, Wallet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const navLinks = [
-  { name: 'Whitepaper', href: '#whitepaper' },
+  { name: 'Whitepaper', href: '/white-paper' },
   { name: 'Token & Sale', href: '#token' },
   { name: 'Roadmap', href: '#roadmap' },
   { name: 'Marketplace', href: '#marketplace' },

@@ -1,24 +1,24 @@
 import { useEffect, useRef } from 'react';
-import { ArrowRight, Calendar, Rocket, Globe, Users, Cpu } from 'lucide-react';
+import { ArrowRight, Calendar, Rocket, Globe, Users, Cpu, Wallet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const milestones = [
   {
-    date: 'Feb 2026',
+    date: 'May 2026',
     title: 'Multi-chain Activation',
     description: 'Activation across four blockchain networks for interoperability and early liquidity.',
     icon: Globe,
     color: 'bg-indigo-100 text-indigo-600',
   },
   {
-    date: 'Mar 2026',
+    date: 'Jun 2026',
     title: 'Website Launch',
     description: 'Official launch of the USDN project website and documentation.',
     icon: Rocket,
     color: 'bg-teal-100 text-teal-600',
   },
   {
-    date: 'Apr 2026',
+    date: 'Jul 2026',
     title: 'Private Sale',
     description: 'Initial private offering for early supporters and strategic partners.',
     icon: Users,
@@ -26,20 +26,27 @@ const milestones = [
   },
   {
     date: 'Oct 2026',
+    title: 'Digital Wallet Launch',
+    description: 'Release of the USDN digital wallet for secure storage, transfers, and ecosystem access.',
+    icon: Wallet,
+    color: 'bg-amber-100 text-amber-600',
+  },
+  {
+    date: 'Jan 2027',
     title: 'Platform Launch',
     description: 'USDN application and initial marketplace functionality activation.',
     icon: Calendar,
     color: 'bg-blue-100 text-blue-600',
   },
   {
-    date: 'Feb 2027',
+    date: 'May 2027',
     title: 'Second Offering',
     description: 'Phase II public offering for broader ecosystem adoption.',
     icon: Users,
     color: 'bg-purple-100 text-purple-600',
   },
   {
-    date: 'Aug 2027',
+    date: 'Nov 2027',
     title: 'USDN Blockchain',
     description: 'Activation of the proprietary USDN blockchain network.',
     icon: Cpu,

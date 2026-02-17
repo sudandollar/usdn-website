@@ -4,7 +4,7 @@ import { Info } from 'lucide-react';
 interface StatCardProps {
   value: string;
   label: string;
-  color: 'indigo' | 'teal' | 'blue';
+  color: 'indigo' | 'teal' | 'blue' | 'rose';
   delay: number;
 }
 
@@ -80,12 +80,14 @@ function StatCard({ value, label, color, delay }: StatCardProps) {
     indigo: 'bg-indigo-100',
     teal: 'bg-teal-100',
     blue: 'bg-blue-100',
+    rose: 'bg-rose-100',
   };
 
   const circleColors = {
     indigo: 'bg-indigo-400',
     teal: 'bg-teal-400',
     blue: 'bg-blue-400',
+    rose: 'bg-rose-400',
   };
 
   return (
@@ -164,7 +166,13 @@ export function TokenStats() {
               delay={100}
             />
             <StatCard
-              value="Utility"
+              value="4-Networks"
+              label="Ethereum, Polygon, Solana, Avax"
+              color="rose"
+              delay={100}
+            />
+            <StatCard
+              value="3-Utility"
               label="Governance, transfers, and marketplace payments."
               color="blue"
               delay={200}

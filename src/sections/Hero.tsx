@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight, FileText, Coins } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 const highlights = [
   'Independent digital asset (not a stablecoin)',
@@ -46,12 +47,13 @@ export function Hero() {
             {/* Headline */}
             <h1 className="reveal text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.1] mb-6">
               Say hello to{' '}
-              <span className="inline-flex items-center gap-2">
+              <span className="inline-flexd items-center gap-2">
                 <img 
                   src="/images/usdn_logo.png" 
                   alt="USDN" 
                   className="w-12 h-12 sm:w-14 sm:h-14 inline-block"
                 />
+                {' '}
                 USDN
               </span>
             </h1>
@@ -59,7 +61,7 @@ export function Hero() {
             {/* Subheadline */}
             <p className="reveal text-lg sm:text-xl text-gray-600 mb-6 leading-relaxed">
               A decentralized digital asset powering a new financial ecosystem across 
-              <span className="text-navy font-medium"> Sudan and emerging markets</span>.
+              <span className="text-rose-900 font-medium"> Sudan and emerging markets</span>.
             </p>
 
             {/* Key Highlights */}
@@ -77,14 +79,17 @@ export function Hero() {
 
             {/* CTA Buttons */}
             <div className="reveal flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
-              <Button
-                size="lg"
-                className="group bg-navy hover:bg-navy-light text-white px-6 py-5 text-sm rounded-full transition-all hover:shadow-lg"
+              <Link
+                to="/white-paper"
+                className="flex items-center justify-center group bg-navy hover:bg-navy-light text-white text-sm transition-all hover:shadow-lg rounded-full"
               >
+              <Button className='px-4 py-6 rounded-full'>
                 <FileText className="w-4 h-4 mr-2" />
-                Read the Whitepaper
+                  Read the Whitepaper
                 <ArrowRight className="w-4 h-4 ml-2 btn-arrow" />
               </Button>
+
+              </Link>
               <Button
                 size="lg"
                 variant="outline"
@@ -122,7 +127,7 @@ export function Hero() {
 
                     {/* Actions */}
                     <div className="flex gap-3 mb-6">
-                      <div className="flex-1 bg-navy text-white py-3 rounded-xl text-center text-sm font-medium">
+                      <div className="flex-1 bg-navyx bg-rose-900 text-white py-3 rounded-xl text-center text-sm font-medium">
                         Send
                       </div>
                       <div className="flex-1 bg-gray-100 text-gray-700 py-3 rounded-xl text-center text-sm font-medium">

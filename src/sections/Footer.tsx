@@ -1,4 +1,4 @@
-import { Twitter, MessageCircle, Github, Linkedin } from 'lucide-react';
+import { Twitter, Github, Facebook, Instagram } from 'lucide-react';
 
 const resourceLinks = [
   { name: 'Whitepaper', href: '#whitepaper' },
@@ -20,10 +20,11 @@ const companyLinks = [
 ];
 
 const socialLinks = [
-  { name: 'Twitter', icon: Twitter, href: '#' },
-  { name: 'Discord', icon: MessageCircle, href: '#' },
-  { name: 'GitHub', icon: Github, href: '#' },
-  { name: 'LinkedIn', icon: Linkedin, href: '#' },
+  { name: 'Twitter', icon: Twitter, href: 'https://x.com/SudanDollar' },
+  { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/profile.php?id=100063619448948&sk=about' },
+  { name: 'GitHub', icon: Github, href: 'https://github.com/sudandollar' },
+  { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/usdn_wallet' },
+  // { name: 'LinkedIn', icon: Linkedin, href: '#' },
 ];
 
 export function Footer() {
@@ -52,6 +53,7 @@ export function Footer() {
                   href={social.href}
                   className="w-9 h-9 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors"
                   aria-label={social.name}
+                  target='_black'
                 >
                   <social.icon className="w-4 h-4 text-gray-600" />
                 </a>

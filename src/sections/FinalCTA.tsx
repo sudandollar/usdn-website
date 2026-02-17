@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { ArrowRight, FileText, Coins } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 export function FinalCTA() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -47,15 +48,20 @@ export function FinalCTA() {
         </p>
 
         <div className="reveal flex flex-col sm:flex-row items-center justify-center gap-3">
-          <Button
-            size="lg"
-            variant="outline"
-            className="group border-white hover:bg-white hover:text-navy px-6 py-5 text-sm rounded-full transition-all"
+        
+          <Link
+            to="/white-paper"
           >
-            <FileText className="w-4 h-4 mr-2" />
-            Read the Whitepaper
-            <ArrowRight className="w-4 h-4 ml-2 btn-arrow" />
-          </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="group text-black border-white hover:bg-white hover:text-navy px-6 py-5 text-sm rounded-full transition-all"
+            >
+              <FileText className="w-4 h-4 mr-2" />
+              Read the Whitepaper
+              <ArrowRight className="w-4 h-4 ml-2 btn-arrow" />
+            </Button>
+          </Link>
           <Button
             size="lg"
             className="group bg-gold hover:bg-gold-light text-navy px-6 py-5 text-sm rounded-full transition-all"

@@ -353,7 +353,7 @@ export default function WhitepaperPage() {
 
             {/* 08 ICO */}
             <Section id="ico" number="08" title="ICO & Use of Funds">
-              <div className="grid md:grid-cols-5 gap-4 my-8">
+              <div className="grid grid-cols-5 gap-4 my-8">
                 {[
                   { label: 'Development', value: '35%', color: COLORS.primary },
                   { label: 'Marketing', value: '25%', color: COLORS.accent },

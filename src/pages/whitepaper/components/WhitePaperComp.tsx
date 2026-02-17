@@ -175,10 +175,11 @@ export const TokenDistribution = () => {
     <div className="rounded-xl p-8 border" style={{ backgroundColor: COLORS.surface, borderColor: COLORS.border }}>
       <div className="flex items-end gap-2 h-48 mb-6">
         {data.map((item, i) => (
-          <div key={i} className="flex-1 flex flex-col items-center gap-2 group">
+          <div key={i} className="h-full flex-1 flex flex-col items-center gap-2 group">
             <div 
               className="w-full rounded-t-lg transition-all duration-500 group-hover:opacity-80"
               style={{ 
+                // height: `${item.value * 1.5}%`, 
                 height: `${item.value * 1.5}%`, 
                 backgroundColor: item.color,
                 opacity: 0.9
